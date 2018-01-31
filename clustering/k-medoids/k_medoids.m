@@ -1,5 +1,5 @@
 function [distrib, center, cost_present] = k_medoids(dist,k) 
-% главная функция кластеризации k-medoids тест
+% главная функция кластеризации k-medoids тест еще тест
 
     % кол-во вершин
     n = size(dist,1);
