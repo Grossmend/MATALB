@@ -1,3 +1,4 @@
+
 % детерминированный логический алгоритм
 
 function [allow] = allowValuesSudokuStruct(M)
