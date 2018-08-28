@@ -1,17 +1,18 @@
 
 %% решето Эратосфена
 
-clearvars
-
 tic
    
-n = 100000000;
+n = 1000000;
 
 mat = (1:1:n);
 mat(1) = 0;
+
+len = length(mat);
+
 for i = 1:n
     if mat(i) > 1
-        for j = i*2:i:length(mat)
+        for j = i*2:i:len
             mat(j) = 0;
         end
 %         ln = length(mat);
@@ -30,7 +31,7 @@ clearvars
 
 tic
 
-n = 100000000;
+n = 1000000;
 mat = primes(n); %#ok
 
 toc
@@ -41,7 +42,7 @@ clearvars
 
 tic
 
-n = 100000000;
+n = 1000000;
 mat = true(n,1);
 mat(1) = false;
 last = 2;
